@@ -11,7 +11,6 @@ public class ExecutarLogin {
 		
 		Login login = new Login("Adm", "123");
 	
-		
 		System.out.println("Login:");
 		String usuario = leitor.next();
 		System.out.println("Senha:");
