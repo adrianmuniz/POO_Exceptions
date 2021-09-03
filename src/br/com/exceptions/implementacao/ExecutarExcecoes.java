@@ -30,7 +30,7 @@ public class ExecutarExcecoes {
 		
 		try {
 			// trecho onde pode acontecer uma excecao
-			System.out.println("Digite palavra SECRETA");
+			System.out.println("Digite palavra SECRETA:");
 			String secreta = sc.nextLine();
 			
 			if(!senha.equals(secreta)) {
@@ -41,7 +41,8 @@ public class ExecutarExcecoes {
 			
 		} catch (Exception e) {
 			// onde as excecoes são tratadas
-			System.out.println("Erro");
+			//System.out.println("Erro");
+			System.out.println(e.getMessage());
 		}
 		
 	}
