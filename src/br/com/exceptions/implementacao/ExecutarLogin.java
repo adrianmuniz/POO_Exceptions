@@ -10,13 +10,13 @@ public class ExecutarLogin {
 		Scanner leitor  = new Scanner (System.in);
 		
 		Login login = new Login("Adm", "123");
+	
 		
 		System.out.println("Login:");
 		String usuario = leitor.next();
 		System.out.println("Senha:");
 		String senha = leitor.next();
 		System.out.println(login.fazerLogin(usuario, senha));
-
 	}
-
 }
+
