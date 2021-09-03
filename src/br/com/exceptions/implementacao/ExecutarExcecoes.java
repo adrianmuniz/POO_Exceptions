@@ -19,9 +19,31 @@ public class ExecutarExcecoes {
 		} catch (Exception e) {
 			// onde as excecoes são tratadas
 			System.out.println("Erro");
-			
+			e.printStackTrace();
+			System.out.println(e.getClass());
 		}
 
+		// Exemplo 2
+		
+		Scanner sc  = new Scanner (System.in);
+		String senha = "12345";
+		
+		try {
+			// trecho onde pode acontecer uma excecao
+			System.out.println("Digite palavra SECRETA");
+			String secreta = sc.nextLine();
+			
+			if(!senha.equals(secreta)) {
+				throw new Exception("Incorreta");
+			}
+			
+			System.out.println("Acesso liberado");
+			
+		} catch (Exception e) {
+			// onde as excecoes são tratadas
+			System.out.println("Erro");
+		}
+		
 	}
 
 }
