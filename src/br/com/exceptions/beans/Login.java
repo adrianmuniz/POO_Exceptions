@@ -31,7 +31,6 @@ public class Login {
 	
 	public boolean fazerLogin(String usuario, String senha) {
 		if (this.usuario.equals(usuario) && this.senha.equals(senha)) {
-			System.out.println("Login bem sucedido");
 			return true;
 		} else if (this.usuario != usuario || this.senha != senha) {
 			System.out.println("Usuário ou Senha incorreto");

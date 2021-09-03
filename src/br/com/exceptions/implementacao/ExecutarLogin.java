@@ -9,7 +9,6 @@ public class ExecutarLogin {
 	public static void main(String[] args) {
 		Scanner leitor  = new Scanner (System.in);
 		
-		
 		Login login = new Login("Adm", "123");
 		
 		System.out.println("Login:");
